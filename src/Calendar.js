@@ -17,6 +17,8 @@ const Calendar = ({
   calendarRangeBetweenClassName,
   calendarRangeEndClassName,
   disabledDays,
+  disabledWeekDays,
+  enabledDays,
   colorPrimary,
   colorPrimaryLight,
   slideAnimationDuration,
@@ -160,6 +162,8 @@ const Calendar = ({
         monthChangeDirection={mainState.monthChangeDirection}
         onSlideChange={updateDate}
         disabledDays={disabledDays}
+        disabledWeekDays={disabledWeekDays}
+        enabledDays={enabledDays}
         onDisabledDayError={onDisabledDayError}
         minimumDate={minimumDate}
         maximumDate={maximumDate}
